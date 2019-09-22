@@ -1,13 +1,14 @@
 {
   "name": "codedeploy-lambda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy Lambda functions using AWS CodeDeploy",
   "main": "index.js",
   "bin": {
     "codedeploy-lambda": "bin/codedeploy-lambda.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm version patch && npm publish && git push --follow-tags"
   },
   "repository": {
     "type": "git",
