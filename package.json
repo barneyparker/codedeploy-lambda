@@ -1,0 +1,32 @@
+{
+  "name": "codedeploy-lambda",
+  "version": "1.0.0",
+  "description": "Deploy Lambda functions using AWS CodeDeploy",
+  "main": "index.js",
+  "bin": {
+    "codedeploy-lambda": "bin/codedeploy-lambda.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barneyparker/codedeploy-lambda.git"
+  },
+  "keywords": [
+    "lambda",
+    "codedeploy",
+    "aws"
+  ],
+  "author": "Barney Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barneyparker/codedeploy-lambda/issues"
+  },
+  "homepage": "https://github.com/barneyparker/codedeploy-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.533.0",
+    "minimist": "^1.2.0",
+    "open": "^6.4.0"
+  }
+}
