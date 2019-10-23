@@ -1,0 +1,16 @@
+module.exports = displayHelp = () => {
+  console.log('codedeploy-lambda <function name> -a <app> -g <group> -t <alias name> [-z <bundle path>] [-v <Lambda Version>]')
+  console.log()
+  console.log('  Required Parameters')
+  console.log('    --app, -a: CodeDeploy Application Name')
+  console.log('    --group, -g: CodeDeploy Deployment Group Name')
+  console.log('    --alias, -A: Lambda Alias Name')
+  console.log()
+  console.log('  Option Parameters')
+  console.log('    --bundle, -b: path to zip containing updated function code')
+  console.log('    --target, -t: Target Lambda Version or Source Tag ($LATEST if not provided)')
+  console.log()
+  console.log('  --console, -c: show AWS CodeDeploy Console on deploy')
+  console.log('  --help: show these instructions')
+  process.exit()
+}

@@ -27,7 +27,7 @@
   "homepage": "https://github.com/barneyparker/codedeploy-lambda#readme",
   "dependencies": {
     "aws-sdk": "^2.533.0",
-    "minimist": "^1.2.0",
+    "command-line-args": "^5.1.1",
     "open": "^6.4.0"
   }
 }
