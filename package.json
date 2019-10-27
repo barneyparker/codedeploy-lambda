@@ -1,6 +1,6 @@
 {
   "name": "codedeploy-lambda",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Deploy Lambda functions using AWS CodeDeploy",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm version patch && npm publish && git push --follow-tags"
+    "prepublishOnly": "npm version patch",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
