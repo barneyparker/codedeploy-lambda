@@ -21,16 +21,20 @@ codedeploy-lambda -z ./lambda-bundle.zip -a demo-app -g demo-group -t myAlias de
 ## Usage
 
 ```
-codedeploy-lambda -a <app> -g <group> -t <alias name> [-z <bundle path>] [-v <Lambda Version>] <function name>
+codedeploy-lambda --app <app> --group <group> --alias <alias name> [-b <path/to/bundle>] [-t <Lambda Version>] <function name>
+
   Required Parameters
-    -a: CodeDeploy Application Name
-    -g: CodeDeploy Deployment Group Name
-    -t: Lambda Alias Name
+    -a --app:   CodeDeploy Application Name
+    -g --group: CodeDeploy Deployment Group Name
+    -A --alias: Lambda Alias Name
+
   Option Parameters
-    -z: path to zip containing updated function code
-    -v: Target Lambda Version ($LATEST if not provided)
-  --console: show AWS CodeDeploy Console on deploy
-  --help: show these instructions
+    -b --bundle: path to bundle containing updated function code
+    -t --target: Target Lambda Version ($LATEST if not provided)
+
+    -c --console: show AWS CodeDeploy Console on deploy
+
+    -h --help: show these instructions
 ```
 
 ## Contributing
